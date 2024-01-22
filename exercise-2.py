@@ -28,7 +28,7 @@ def contains_3_consecutive(list_of_nums):
         if (list_of_nums[i+1] == list_of_nums[i] + 1 and
             list_of_nums[i+2] == list_of_nums[i] + 2):
             return True
-        else:
+        else: # fix by removing else statement and returning false after for loop
             return False
 
     return False
