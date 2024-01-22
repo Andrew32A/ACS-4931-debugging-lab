@@ -10,11 +10,17 @@ Exercise 2
 # - What line number is causing the error?
 # - What can you deduce about the cause of the error?
 
+# Expected Output: The program should return true if the list contains 3 consecutive numbers each increasing by 1.
+# Actual Output: The code is returning false with the list [4, 1, 2, 3] when it should return true.
+# Line Number Causing the Error: line 31.
+# Cause of the Error: The code is stopping too early and returning false due to the else on line 27, it can be fixed by removing the else statement and returning false after the for loop.
 
 # PART 2: State Assumptions
 #
 # TODO: State your assumptions here or say them out loud to your partner ...
 # Make sure to be SPECIFIC about what each of your assumptions is!
+
+# Code is stopping to early and returning false due to the else on line 27, it can be fixed by removing the else statement and returning false after the for loop.
 
 def contains_3_consecutive(list_of_nums):
     """Return True if the list contains 3 consecutive numbers each increasing by 1."""
