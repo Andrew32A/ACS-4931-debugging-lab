@@ -10,7 +10,7 @@ Exercise 3
 # - What line number is causing the error?
 # - What can you deduce about the cause of the error?
 
-# The program is expected to sort the list [5, 2, 3, 1, 6] using the Insertion Sort algorithm and print the sorted list.
+# Expected Output: The program is expected to sort the list [5, 2, 3, 1, 6] using the Insertion Sort algorithm and print the sorted list.
 # Actual Output: IndexError: list index out of range.
 # Line Number Causing the Error: line 34 and 26.
 # Cause of the Error: The code likely contains a logical issue that prevents it from sorting the list correctly.
