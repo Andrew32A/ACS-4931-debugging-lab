@@ -40,3 +40,7 @@ if __name__ == '__main__':
     answer = insertion_sort([5, 2, 3, 1, 6])
     print(answer)
 
+# - Expected vs. Actual Output: The program is expected to sort the list [5, 2, 3, 1, 6] using the Insertion Sort algorithm and print the sorted list. IndexError: list index out of range.
+# - Error Message: IndexError: list index out of range.
+# - Line Number Causing the Error: lines 34 and 26.
+# - Developer Assumptions: The developer doesn't account for j -= 1in the loop which is causing the index to hit -1 and needs to add a j >= 0 check in the loop to avoid the index error.

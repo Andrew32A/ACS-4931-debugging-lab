@@ -40,3 +40,8 @@ if __name__ == '__main__':
 
     answer2 = contains_3_consecutive([4, 1, 2, 3])
     print(answer2) # should print True
+
+# - Expected vs. Actual Output: The program should return true if the list contains 3 consecutive numbers each increasing by 1. The code is returning false with the list [4, 1, 2, 3] when it should return true.
+# - Error Message: No error message.
+# - Line Number Causing the Error: line 31.
+# - Developer Assumptions: The developer assumes that else will continue the loop. The code is stopping too early and returning false due to the else on line 27, it can be fixed by removing the else statement and returning false after the for loop.

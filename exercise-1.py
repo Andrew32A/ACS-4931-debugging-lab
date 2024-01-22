@@ -39,3 +39,8 @@ if __name__ == '__main__':
 
     # This should print 4, as the largest diff between consecutive numbers is between 2 and 6
     print(answer)
+
+# - Expected vs. Actual Output: The program should find and print the largest difference between consecutive numbers in the list [5, 3, 1, 2, 6, 4]. The code is incomplete and will raise an error.
+# - Error Message: IndexError: list index out of range
+# - Line Number Causing the Error: line 31, in find_largest_diff diff = abs(list_of_nums[i] - list_of_nums[i+1])
+# - Developer Assumptions: The code does not handle the last element of the list properly, which will result in an "IndexError" when trying to access list_of_nums[i+1] for the last element.

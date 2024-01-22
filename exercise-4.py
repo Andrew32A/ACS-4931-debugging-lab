@@ -46,3 +46,8 @@ def binary_search(arr, element, low=0, high=None):
 if __name__ == '__main__':
     answer = binary_search([1, 2, 4, 5, 7], 7)
     print(answer)
+
+# - Expected vs. Actual Output: Expected to perform a binary search on the sorted list [1, 2, 4, 5, 7] to find the index of the element 7. The expected output is the index 4 but is returning an IndentationError and RecursionError.
+# - Error Message: RecursionError: maximum recursion depth exceeded in comparison.
+# - Line Number Causing the Error: lines 28, 43, and 47
+# - Developer Assumptions: Docstring is one indent too far to the right. The recursion issue is because the developer doesn't account if the element is on the left or right side of the middle element. Should add a +1 or -1 to mid on the last 2 conditionals to fix this.
